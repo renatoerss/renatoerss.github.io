@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Renato Santos, Ph.D. | Molecular Biologist &amp; R&amp;D Scientist</title>
+<meta name="description" content="Ph.D. molecular biologist working between the bench and the data. Greater Boston, MA.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23202a25'/><text x='50' y='66' font-size='46' text-anchor='middle' fill='%23f3efe6' font-family='Georgia,serif'>RS</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f3ec;--ink:#1d2420;--mute:#6b736d;--line:#d9d5ca;--acc:#3f5a4c;--ph:#ebe7dc;
+--serif:"Fraunces",Georgia,"Times New Roman",serif;--sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#121512;--ink:#ece8de;--mute:#98a39b;--line:#2c332e;--acc:#a9c4b4;--ph:#1a1f1b}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration-color:var(--line);text-underline-offset:4px}
+a:hover{text-decoration-color:var(--acc);color:var(--acc)}
+.w{max-width:1040px;margin:0 auto;padding:0 28px}
+.label{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);font-weight:500}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:56px}
+nav a{text-decoration:none;font-size:13px;margin-left:24px;color:var(--mute)}
+nav a:hover{color:var(--ink)}
+nav .mark{font:300 20px var(--serif);color:var(--ink);margin:0}
+.hero{padding:112px 0 96px}
+.hero h1{font:300 clamp(48px,9vw,104px)/1 var(--serif);letter-spacing:-.03em;margin:18px 0 28px}
+.hero h1 em{font-style:italic;color:var(--acc)}
+.hero p{max-width:560px;font-size:19px;color:var(--mute);margin:0 0 36px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 32px}
+.meta a{font-size:14px}
+section{padding:80px 0;border-top:1px solid var(--line)}
+.head{display:grid;grid-template-columns:200px 1fr;gap:28px;margin-bottom:56px}
+.head h2{font:300 clamp(28px,4vw,40px)/1.15 var(--serif);letter-spacing:-.02em;margin:0}
+@media(max-width:760px){.head{grid-template-columns:1fr;gap:8px}}
+.case{display:grid;grid-template-columns:repeat(12,1fr);gap:24px 40px;align-items:center;margin-bottom:104px}
+.case:last-child{margin-bottom:0}
+.case figure{grid-column:1 / span 6;margin:0}
+.case .txt{grid-column:8 / span 5}
+.case:nth-child(even) figure{grid-column:7 / span 6;grid-row:1}
+.case:nth-child(even) .txt{grid-column:1 / span 5}
+@media(max-width:820px){.case figure,.case .txt,.case:nth-child(even) figure,.case:nth-child(even) .txt{grid-column:1 / -1;grid-row:auto}}
+.ph{aspect-ratio:4/3;background:var(--ph);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;color:var(--mute);font-size:13px}
+figcaption{font-size:12px;color:var(--mute);margin-top:10px}
+.num{font:300 56px/1 var(--serif);color:var(--line)}
+.txt h3{font:400 26px/1.25 var(--serif);letter-spacing:-.01em;margin:8px 0 6px}
+.txt .where{font-size:13px;color:var(--mute);margin:0 0 20px}
+.txt dt{margin-top:16px;color:var(--acc)}
+.txt dd{margin:4px 0 0;font-size:15px}
+.tags{margin-top:20px;font-size:12px;color:var(--mute)}
+.tags span+span::before{content:"·";margin:0 8px}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:0 56px}
+@media(max-width:760px){.skills{grid-template-columns:1fr}}
+.skills>.sk{padding:20px 0;border-top:1px solid var(--line)}
+.skills h4{margin:0 0 6px;font:400 19px var(--serif)}
+.skills p{margin:0;font-size:14px;color:var(--mute)}
+.pubs{list-style:none;margin:0;padding:0}
+.pubs li{display:grid;grid-template-columns:64px 1fr;gap:16px;padding:20px 0;border-top:1px solid var(--line);font-size:15px}
+.pubs .y{font:300 22px var(--serif);color:var(--acc)}
+.more{margin-top:32px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-size:14px;padding:11px 20px;border:1px solid var(--line);text-decoration:none;color:var(--ink);transition:border-color .2s,color .2s}
+.btn:hover{border-color:var(--acc);color:var(--acc)}
+.btn .ic{width:14px;height:14px;vertical-align:0}
+.contact{padding:96px 0 72px}
+.contact a.big{font:300 clamp(26px,5vw,52px)/1.1 var(--serif);letter-spacing:-.02em;text-decoration:none;border-bottom:1px solid var(--line);word-break:break-all}
+.contact .row{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:32px;font-size:14px}
+footer{padding:28px 0 48px;border-top:1px solid var(--line);font-size:12px;color:var(--mute)}
+
+.ic{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;flex:none;vertical-align:-4px}
+.meta a,.row a{display:inline-flex;align-items:center;gap:8px}
+.hero{position:relative;overflow:hidden}
+.hero>*{position:relative;z-index:1}
+.helix{position:absolute!important;right:-20px;top:40px;width:340px;height:auto;z-index:0!important;opacity:.55;pointer-events:none}
+@media(max-width:820px){.helix{width:200px;right:-50px;opacity:.28}}
+.ph{position:relative}
+.ph::before,.ph::after{content:"";position:absolute;width:22px;height:22px;border:1px solid var(--acc);opacity:.7}
+.ph::before{top:10px;left:10px;border-right:0;border-bottom:0}
+.ph::after{bottom:10px;right:10px;border-left:0;border-top:0}
+.ph svg{width:34px;height:34px;display:block;margin:0 auto 10px;fill:none;stroke:var(--acc);stroke-width:1.1;opacity:.8}
+.skills .sk{display:flex;gap:18px}
+.skills .sk svg{width:30px;height:30px;fill:none;stroke:var(--acc);stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;flex:none;margin-top:2px}
+.pubs a{display:inline-flex;align-items:center;gap:4px;font-size:13px;margin-left:4px}
+.pubs a .ic{width:13px;height:13px;vertical-align:0}
+.orn{display:flex;align-items:center;gap:16px;color:var(--line);margin:0 auto;max-width:1040px;padding:0 28px}
+.orn::before,.orn::after{content:"";flex:1;height:1px;background:var(--line)}
+.orn svg{width:22px;height:22px;fill:none;stroke:var(--acc);stroke-width:1.2;opacity:.8}
+.label .ic{width:14px;height:14px;margin-right:8px;vertical-align:-2px;color:var(--acc)}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+.gal{display:grid;grid-template-columns:repeat(12,1fr);gap:64px 32px;align-items:start}
+.gal figure{margin:0}
+.gal img{display:block;width:100%;height:auto;object-fit:cover;border:1px solid var(--line)}
+.gal figcaption{font-size:14px;line-height:1.6;color:var(--mute);margin-top:14px;max-width:560px}
+.gal figcaption b{display:block;font:400 17px/1.3 var(--serif);color:var(--ink);margin-bottom:4px}
+.g1{grid-column:1 / span 6;grid-row:1}.g1 img{aspect-ratio:7/6}
+.g3{grid-column:8 / span 5;grid-row:1}.g3 img{aspect-ratio:19/20}
+.g4{grid-column:1 / span 6;grid-row:2}.g4 img{aspect-ratio:16/9}
+.g2{grid-column:1 / span 6;grid-row:3}.g2 img{aspect-ratio:2/1}
+.g5{grid-column:8 / span 5;grid-row:2 / span 2;align-self:center}.g5 img{aspect-ratio:3/4}
+.gal figcaption small{display:block;margin-top:8px;font-size:12px;opacity:.8}
+@media(max-width:820px){.gal{grid-template-columns:1fr;gap:44px}.g1,.g2,.g3,.g4,.g5{grid-column:1 / -1;grid-row:auto;align-self:start}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></symbol>
+<symbol id="i-dl" viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5L12 15l4.5-4.5M5 20h14"/></symbol>
+<symbol id="i-in" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v5M8 8v.01M12 16v-3a2 2 0 014 0v3M12 11v5"/></symbol>
+<symbol id="i-sch" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5M22 9v6"/></symbol>
+<symbol id="i-gh" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="9" r="2.5"/><path d="M6 8.5v7M18 11.5c0 4-4 5-9.5 6"/></symbol>
+<symbol id="i-orcid" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 8.5v.01M9 11.5v5M12 11.5h1.5a2.5 2.5 0 010 5H12z"/></symbol>
+<symbol id="i-out" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></symbol>
+<symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5 9a2 2 0 002 3h10a2 2 0 002-3l-5-9V3M7.5 15h9"/></symbol>
+<symbol id="i-helix" viewBox="0 0 24 24"><path d="M8 3c0 5 8 5 8 9s-8 4-8 9M16 3c0 5-8 5-8 9s8 4 8 9M9.5 6.5h5M9.5 17.5h5"/></symbol>
+<symbol id="i-mol" viewBox="0 0 24 24"><path d="M12 3l7.5 4.3v8.4L12 20l-7.5-4.3V7.3z"/><path d="M12 11.5V20M4.5 7.3L12 11.5l7.5-4.2"/></symbol>
+<symbol id="i-pulse" viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></symbol>
+<symbol id="i-img" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M4 18l5-5 4 4 3-3 4 4"/></symbol>
+</defs></svg>
+
+<nav><div class="w">
+  <a class="mark" href="#top">RS</a>
+  <div><a href="#work">Work</a><a href="#skills">Skills</a><a href="#papers">Papers</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<main id="top">
+<div class="w hero">
+  <svg class="helix" viewBox="0 0 200 420" aria-hidden="true" fill="none" stroke-linecap="round"><path d="M100.0 0.0 L107.3 3.5 L114.5 7.0 L121.4 10.5 L128.0 14.0 L134.1 17.5 L139.6 21.0 L144.4 24.5 L148.5 28.0 L151.7 31.5 L154.1 35.0 L155.5 38.5 L156.0 42.0 L155.5 45.5 L154.1 49.0 L151.7 52.5 L148.5 56.0 L144.4 59.5 L139.6 63.0 L134.1 66.5 L128.0 70.0 L121.4 73.5 L114.5 77.0 L107.3 80.5 L100.0 84.0 L92.7 87.5 L85.5 91.0 L78.6 94.5 L72.0 98.0 L65.9 101.5 L60.4 105.0 L55.6 108.5 L51.5 112.0 L48.3 115.5 L45.9 119.0 L44.5 122.5 L44.0 126.0 L44.5 129.5 L45.9 133.0 L48.3 136.5 L51.5 140.0 L55.6 143.5 L60.4 147.0 L65.9 150.5 L72.0 154.0 L78.6 157.5 L85.5 161.0 L92.7 164.5 L100.0 168.0 L107.3 171.5 L114.5 175.0 L121.4 178.5 L128.0 182.0 L134.1 185.5 L139.6 189.0 L144.4 192.5 L148.5 196.0 L151.7 199.5 L154.1 203.0 L155.5 206.5 L156.0 210.0 L155.5 213.5 L154.1 217.0 L151.7 220.5 L148.5 224.0 L144.4 227.5 L139.6 231.0 L134.1 234.5 L128.0 238.0 L121.4 241.5 L114.5 245.0 L107.3 248.5 L100.0 252.0 L92.7 255.5 L85.5 259.0 L78.6 262.5 L72.0 266.0 L65.9 269.5 L60.4 273.0 L55.6 276.5 L51.5 280.0 L48.3 283.5 L45.9 287.0 L44.5 290.5 L44.0 294.0 L44.5 297.5 L45.9 301.0 L48.3 304.5 L51.5 308.0 L55.6 311.5 L60.4 315.0 L65.9 318.5 L72.0 322.0 L78.6 325.5 L85.5 329.0 L92.7 332.5 L100.0 336.0 L107.3 339.5 L114.5 343.0 L121.4 346.5 L128.0 350.0 L134.1 353.5 L139.6 357.0 L144.4 360.5 L148.5 364.0 L151.7 367.5 L154.1 371.0 L155.5 374.5 L156.0 378.0 L155.5 381.5 L154.1 385.0 L151.7 388.5 L148.5 392.0 L144.4 395.5 L139.6 399.0 L134.1 402.5 L128.0 406.0 L121.4 409.5 L114.5 413.0 L107.3 416.5 L100.0 420.0" stroke="var(--acc)" stroke-width="1"/><path d="M100.0 0.0 L92.7 3.5 L85.5 7.0 L78.6 10.5 L72.0 14.0 L65.9 17.5 L60.4 21.0 L55.6 24.5 L51.5 28.0 L48.3 31.5 L45.9 35.0 L44.5 38.5 L44.0 42.0 L44.5 45.5 L45.9 49.0 L48.3 52.5 L51.5 56.0 L55.6 59.5 L60.4 63.0 L65.9 66.5 L72.0 70.0 L78.6 73.5 L85.5 77.0 L92.7 80.5 L100.0 84.0 L107.3 87.5 L114.5 91.0 L121.4 94.5 L128.0 98.0 L134.1 101.5 L139.6 105.0 L144.4 108.5 L148.5 112.0 L151.7 115.5 L154.1 119.0 L155.5 122.5 L156.0 126.0 L155.5 129.5 L154.1 133.0 L151.7 136.5 L148.5 140.0 L144.4 143.5 L139.6 147.0 L134.1 150.5 L128.0 154.0 L121.4 157.5 L114.5 161.0 L107.3 164.5 L100.0 168.0 L92.7 171.5 L85.5 175.0 L78.6 178.5 L72.0 182.0 L65.9 185.5 L60.4 189.0 L55.6 192.5 L51.5 196.0 L48.3 199.5 L45.9 203.0 L44.5 206.5 L44.0 210.0 L44.5 213.5 L45.9 217.0 L48.3 220.5 L51.5 224.0 L55.6 227.5 L60.4 231.0 L65.9 234.5 L72.0 238.0 L78.6 241.5 L85.5 245.0 L92.7 248.5 L100.0 252.0 L107.3 255.5 L114.5 259.0 L121.4 262.5 L128.0 266.0 L134.1 269.5 L139.6 273.0 L144.4 276.5 L148.5 280.0 L151.7 283.5 L154.1 287.0 L155.5 290.5 L156.0 294.0 L155.5 297.5 L154.1 301.0 L151.7 304.5 L148.5 308.0 L144.4 311.5 L139.6 315.0 L134.1 318.5 L128.0 322.0 L121.4 325.5 L114.5 329.0 L107.3 332.5 L100.0 336.0 L92.7 339.5 L85.5 343.0 L78.6 346.5 L72.0 350.0 L65.9 353.5 L60.4 357.0 L55.6 360.5 L51.5 364.0 L48.3 367.5 L45.9 371.0 L44.5 374.5 L44.0 378.0 L44.5 381.5 L45.9 385.0 L48.3 388.5 L51.5 392.0 L55.6 395.5 L60.4 399.0 L65.9 402.5 L72.0 406.0 L78.6 409.5 L85.5 413.0 L92.7 416.5 L100.0 420.0" stroke="var(--acc)" stroke-width="1" opacity=".55"/><path d="M128.0 14.0H72.0 M154.1 35.0H45.9 M148.5 56.0H51.5 M114.5 77.0H85.5 M72.0 98.0H128.0 M45.9 119.0H154.1 M51.5 140.0H148.5 M85.5 161.0H114.5 M128.0 182.0H72.0 M154.1 203.0H45.9 M148.5 224.0H51.5 M114.5 245.0H85.5 M72.0 266.0H128.0 M45.9 287.0H154.1 M51.5 308.0H148.5 M85.5 329.0H114.5 M128.0 350.0H72.0 M154.1 371.0H45.9 M148.5 392.0H51.5 M114.5 413.0H85.5" stroke="var(--line)" stroke-width="1"/></svg>
+  <span class="label">Greater Boston, MA</span>
+  <h1>Renato Santos, <em>Ph.D.</em></h1>
+  <p>Molecular biologist and R&amp;D scientist working between the bench and the data analysis: from a hypothesis, to the experimental design, the assay, the sequencing run and the figure that explains it.</p>
+  <div class="meta">
+    <a href="assets/Renato_Santos_Resume.pdf" download><svg class="ic"><use href="#i-dl"/></svg>Resume (PDF)</a>
+    <a href="https://www.linkedin.com/in/santosrers/" target="_blank" rel="noopener"><svg class="ic"><use href="#i-in"/></svg>LinkedIn</a>
+    <a href="https://scholar.google.com/citations?hl=en&amp;user=pruc3a0AAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener"><svg class="ic"><use href="#i-sch"/></svg>Google Scholar</a>
+    <a href="https://orcid.org/0000-0002-8702-4202" target="_blank" rel="noopener"><svg class="ic"><use href="#i-orcid"/></svg>ORCID</a>
+    <a href="https://github.com/renatoerss" target="_blank" rel="noopener"><svg class="ic"><use href="#i-gh"/></svg>GitHub</a>
+  </div>
+</div>
+
+<section id="work"><div class="w">
+  <div class="head rv"><span class="label">Selected work</span><h2>Four projects, told as problem, approach and outcome.</h2></div>
+
+  <article class="case rv">
+    <figure><div class="ph"><svg><use href="#i-img"/></svg>Figure 01<br>AI-generated schematic, to be added</div><figcaption>CRP, PepA and the modified interface.</figcaption></figure>
+    <div class="txt">
+      <div class="num">01</div>
+      <h3>How a chemical tag changes a global regulator</h3>
+      <p class="where">Boston Children’s Hospital · Harvard Medical School · 2022–2026</p>
+      <dl>
+        <dt class="label">Problem</dt><dd>CRP controls hundreds of genes in <em>Vibrio cholerae</em>. We wanted to know how it partners with PepA and H-NS, and what modifications to CRP do to the cell’s stress response. [Draft: rewrite in your own words]</dd>
+        <dt class="label">Approach</dt><dd>RNA-seq and ChIP-seq analysis in R, mass-spec mapping of CRP modifications, and structural models of the complexes (AlphaFold, HADDOCK) to choose which residues to mutate. [Draft]</dd>
+        <dt class="label">Outcome</dt><dd>Two PNAS papers: sequestration of a dual-function DNA-binding protein by CRP (2022), and formylation of CRP activating region 3 and the response to oxidative DNA damage (2026). [Draft]</dd>
+      </dl>
+      <div class="tags"><span>RNA-seq</span><span>ChIP-seq</span><span>AlphaFold</span><span>HADDOCK</span></div>
+    </div>
+  </article>
+
+  <article class="case rv">
+    <figure><div class="ph"><svg><use href="#i-img"/></svg>Figure 02<br>AI-generated schematic, to be added</div><figcaption>Iron, zinc and the host’s defenses.</figcaption></figure>
+    <div class="txt">
+      <div class="num">02</div>
+      <h3>A gene that looked essential, until the conditions changed</h3>
+      <p class="where">University of São Paulo with Vanderbilt University · 2017–2021</p>
+      <dl>
+        <dt class="label">Problem</dt><dd><em>fur</em> seemed essential in <em>Chromobacterium violaceum</em>, which blocked the study of iron and zinc homeostasis in infection. [Draft]</dd>
+        <dt class="label">Approach</dt><dd>Selection under iron chelation to recover mutants, transposon mutagenesis to find suppressors, phenotypic assays, and calprotectin assays standardized with the Skaar and Chazin labs. [Draft]</dd>
+        <dt class="label">Outcome</dt><dd>Papers in <em>Applied and Environmental Microbiology</em> (2020) and <em>Infection and Immunity</em> (2021). [Draft]</dd>
+      </dl>
+      <div class="tags"><span>Genetics</span><span>Mouse model</span><span>Neutrophils</span></div>
+    </div>
+  </article>
+
+  <article class="case rv">
+    <figure><div class="ph"><svg><use href="#i-img"/></svg>Figure 03<br>AI-generated schematic, to be added</div><figcaption>A rapamycin-inducible switch.</figcaption></figure>
+    <div class="txt">
+      <div class="num">03</div>
+      <h3>Building the switch before using it</h3>
+      <p class="where">University of São Paulo · 2015–2017</p>
+      <dl>
+        <dt class="label">Problem</dt><dd>Studying essential genes in <em>Leishmania major</em> needs conditional control that the field lacked. [Draft]</dd>
+        <dt class="label">Approach</dt><dd>A rapamycin-inducible diCre-LoxP system built by homologous recombination, then applied to conditional truncation of Rad9. [Draft]</dd>
+        <dt class="label">Outcome</dt><dd>Dose- and time-dependent induction, published in <em>Mol Biochem Parasitol</em> (2017) and as a Springer methods chapter (2019). [Draft]</dd>
+      </dl>
+      <div class="tags"><span>diCre-LoxP</span><span>Flow cytometry</span><span>Phyre2</span></div>
+    </div>
+  </article>
+
+  <article class="case rv">
+    <figure><div class="ph"><svg><use href="#i-img"/></svg>Figure 04<br>AI-generated schematic, to be added</div><figcaption>From cell pellet to clean fractions.</figcaption></figure>
+    <div class="txt">
+      <div class="num">04</div>
+      <h3>Making a messy protocol repeatable</h3>
+      <p class="where">Boston Children’s Hospital · Harvard Medical School · 2022–2026</p>
+      <dl>
+        <dt class="label">Problem</dt><dd>Localization and vesicle work needed clean fractions and quantitative blots that other people could reproduce. [Draft]</dd>
+        <dt class="label">Approach</dt><dd>Four iterations of a fractionation and sucrose-gradient workflow, vesicle tracking with ZetaView, quantitative NIR Westerns, all written up as SOPs. [Draft]</dd>
+        <dt class="label">Outcome</dt><dd>50+ SOPs in LabArchives with QC benchmarks, used to onboard junior scientists. [Draft]</dd>
+      </dl>
+      <div class="tags"><span>SOPs</span><span>Ultracentrifugation</span><span>NTA</span></div>
+    </div>
+  </article>
+</div></section>
+
+<section id="skills"><div class="w">
+  <div class="head rv"><span class="label">Capabilities</span><h2>Bench and computer, in the same project.</h2></div>
+  <div class="skills rv">
+    <div class="sk"><svg><use href="#i-flask"/></svg><div><h4>Molecular biology</h4><p>Allelic exchange, Gibson Assembly, site-directed mutagenesis, diCre-LoxP, epitope tagging, transposon mutagenesis.</p></div></div>
+    <div class="sk"><svg><use href="#i-helix"/></svg><div><h4>Multi-omics and computation</h4><p>RNA-seq, ChIP-seq, RIL-seq; R (DESeq2, edgeR, ggplot2), Python, Galaxy, AlphaFold, HADDOCK, PyMOL.</p></div></div>
+    <div class="sk"><svg><use href="#i-mol"/></svg><div><h4>Protein biochemistry</h4><p>Ni-NTA purification, Co-IP, bacterial two-hybrid, quantitative NIR Western, mass-spec sample prep, OMV isolation.</p></div></div>
+    <div class="sk"><svg><use href="#i-pulse"/></svg><div><h4>Models and operations</h4><p>Drosophila and murine models, primary neutrophils, organoids (BSL-2), 50+ SOPs, LIMS, GCP, project management.</p></div></div>
+  </div>
+</div></section>
+
+<section id="papers"><div class="w">
+  <div class="head rv"><span class="label">Publications</span><h2>Selected papers.</h2></div>
+  <ul class="pubs rv">
+    <li><span class="y">2026</span><span>Santos RERS, Basu P, O’Hara BJ, et al. Actuation of CRP activating region 3 by formylation modulates the <em>Vibrio cholerae</em> response to oxidative DNA damage. <em>PNAS</em> 123(37). <a href="https://doi.org/10.1073/pnas.2602861123" target="_blank" rel="noopener">DOI<svg class="ic"><use href="#i-out"/></svg></a></span></li>
+    <li><span class="y">2025</span><span>James J, Santos RERS, Watnick PI. Carbon source, cell density, and the microbial community control inhibition of <em>V. cholerae</em> surface colonization by environmental nitrate. <em>mBio</em> 16(4). <a href="https://doi.org/10.1128/mbio.04066-24" target="_blank" rel="noopener">DOI<svg class="ic"><use href="#i-out"/></svg></a></span></li>
+    <li><span class="y">2022</span><span>Gibson JA, Gebhardt MJ, Santos RERS, et al. Sequestration of a dual function DNA-binding protein by <em>Vibrio cholerae</em> CRP. <em>PNAS</em> 119(46). <a href="https://doi.org/10.1073/pnas.2210115119" target="_blank" rel="noopener">DOI<svg class="ic"><use href="#i-out"/></svg></a></span></li>
+    <li><span class="y">2021</span><span>Santos RERS, da Silva Júnior WP, Harrison S, et al. The Zinc Transporter ZnuABC Is Critical for the Virulence of <em>Chromobacterium violaceum</em> and Contributes to Diverse Zinc-Dependent Physiological Processes. <em>Infect Immun</em> 89(11). <a href="https://doi.org/10.1128/iai.00311-21" target="_blank" rel="noopener">DOI<svg class="ic"><use href="#i-out"/></svg></a></span></li>
+    <li><span class="y">2020</span><span>Santos RERS, Batista BB, da Silva Neto JF. Ferric Uptake Regulator Fur Coordinates Siderophore Production and Defense against Iron Toxicity and Oxidative Stress and Contributes to Virulence in <em>Chromobacterium violaceum</em>. <em>Appl Environ Microbiol</em> 86(21). <a href="https://doi.org/10.1128/AEM.01620-20" target="_blank" rel="noopener">DOI<svg class="ic"><use href="#i-out"/></svg></a></span></li>
+  </ul>
+  <div class="more rv"><a class="btn" href="https://pubmed.ncbi.nlm.nih.gov/?term=santos+rers" target="_blank" rel="noopener">View all on PubMed<svg class="ic"><use href="#i-out"/></svg></a></div>
+</div></section>
+
+<section id="gallery"><div class="w">
+  <div class="head rv"><span class="label">Behind the science</span><h2>Colonies, blots and conference halls.</h2></div>
+  <div class="gal">
+    <figure class="g1 rv"><img src="assets/img/houston-asm-2023.jpg" alt="Renato Santos standing next to his poster at ASM Microbe 2023 in Houston" loading="lazy"><figcaption><b>Houston, June 2023.</b>Presenting how CRP sticks to the membrane in <em>Vibrio cholerae</em> at ASM Microbe. The poster was big. The coffee intake was bigger.</figcaption></figure>
+    <figure class="g3 rv"><img src="assets/img/blot-hns-pulldown.jpg" alt="Western blot with a molecular weight ladder and four lanes showing red bands on a black background" loading="lazy"><figcaption><b>Four lanes, zero drama.</b>A pull-down of VSV-G-tagged H-NS. Not flashy, but a clean blot is a very good day at the bench.</figcaption></figure>
+    <figure class="g4 rv"><img src="assets/img/vibrio-competition.jpg" alt="Agar plate with small Vibrio cholerae colonies, mostly white with some blue, in a competition assay" loading="lazy"><figcaption><b>A tiny war on agar.</b><em>Vibrio cholerae</em>, blue colonies against white ones. At a glance, white is winning. In science, we count before celebrating.</figcaption></figure>
+    <figure class="g2 rv"><img src="assets/img/cviolaceum-colonies.jpg" alt="Two Chromobacterium violaceum colonies: a purple wild type and a white Δvio mutant, both with ridged edges" loading="lazy"><figcaption><b>Purple and ghost.</b>Wild-type <em>Chromobacterium violaceum</em> (left) makes violacein, the purple pigment. The Δ<em>vio</em> mutant (right) cannot, but the ridged biofilm edges are still there. Same architecture, different wardrobe.</figcaption></figure>
+    <figure class="g5 rv"><img src="assets/img/aem-cover-2020.jpg" alt="Cover of Applied and Environmental Microbiology, November 2020, showing a wrinkled purple Chromobacterium violaceum colony" loading="lazy"><figcaption><b>Cover model.</b>A three-day-old <em>Chromobacterium violaceum</em> colony, grown on iron-supplemented agar, made the cover of <em>Applied and Environmental Microbiology</em> in November 2020. Wrinkles, violacein and all. No stylist needed.<small>Cover © 2020 American Society for Microbiology.</small></figcaption></figure>
+  </div>
+</div></section>
+
+<div class="orn" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-helix"/></svg></div>
+<section class="contact" id="contact"><div class="w rv">
+  <span class="label"><svg class="ic"><use href="#i-mail"/></svg>Contact</span>
+  <p style="margin:12px 0 20px;color:var(--mute);max-width:520px">Open to work. Available for positions in Boston and surrounding area.</p>
+  <a class="big" href="mailto:renatoerss@proton.me">renatoerss@proton.me</a>
+  <div class="row">
+    <a href="https://www.linkedin.com/in/santosrers/" target="_blank" rel="noopener"><svg class="ic"><use href="#i-in"/></svg>LinkedIn</a>
+    <a href="https://scholar.google.com/citations?hl=en&amp;user=pruc3a0AAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener"><svg class="ic"><use href="#i-sch"/></svg>Google Scholar</a>
+    <a href="https://orcid.org/0000-0002-8702-4202" target="_blank" rel="noopener"><svg class="ic"><use href="#i-orcid"/></svg>ORCID</a>
+    <a href="https://github.com/renatoerss" target="_blank" rel="noopener"><svg class="ic"><use href="#i-gh"/></svg>GitHub</a>
+    <a href="assets/Renato_Santos_Resume.pdf" download><svg class="ic"><use href="#i-dl"/></svg>Resume (PDF)</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="w">© 2026 Renato ERS Santos, Ph.D. · Boston, Massachusetts · All rights reserved</div></footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.08});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+<script data-goatcounter="https://rerss.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
